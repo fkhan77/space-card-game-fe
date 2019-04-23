@@ -1,0 +1,47 @@
+.ship-logo-container {
+  animation: ship-logo-animate infinite 2s linear;
+  position: relative;
+  transform: rotate(90deg);
+  height: 100px;
+  width: 100px;
+  pointer-events: none;
+}
+
+.startPage-header {
+  background-size: auto 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.start-game {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 5rem;
+  font-family: courier;
+  text-decoration: none;
+  color: darkblue;
+}
+
+@keyframes ship-logo-animate {
+  0% {
+    left: 0px;
+  }
+  35% {
+    left: 200px;
+    transform: rotate(90deg);
+  }
+  50% {
+    left: 200px;
+    transform: rotate(270deg);
+  }
+  85% {
+    left: 0px;
+    transform: rotate(270deg);
+  }
+
+  100% {
+    left: 0px;
+    transform: rotate(450deg);
+  }
+}
