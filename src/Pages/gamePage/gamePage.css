@@ -1,0 +1,8 @@
+.game-page-intro-text {
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  font-family: courier;
+  text-decoration: none;
+  color: darkblue;
+}
