@@ -1,33 +1,52 @@
 .App {
-  text-align: center;
+  background-image: url("./Assets/spaceBackground.jpg");
+  background-position: center;
+  height: 100vh;
+  background-size: 100% 100%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.ship-logo-container {
+  animation: ship-logo-animate infinite 2s linear;
+  position: relative;
+  transform: rotate(90deg);
+  height: 100px;
+  width: 100px;
   pointer-events: none;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-size: auto 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.title {
+  color: white;
+}
+
+@keyframes ship-logo-animate {
+  0% {
+    left: 0px;
   }
-  to {
-    transform: rotate(360deg);
+  35% {
+    left: 200px;
+    transform: rotate(90deg);
+  }
+  50% {
+    left: 200px;
+    transform: rotate(270deg);
+  }
+  85% {
+    left: 0px;
+    transform: rotate(270deg);
+  }
+
+  100% {
+    left: 0px;
+    transform: rotate(450deg);
   }
 }
