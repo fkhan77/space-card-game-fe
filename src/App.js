@@ -1,24 +1,22 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import createCard from "./Components/createCard";
+import shipLogo from "./Assets/singleShip.png";
+import gameTitle from "./Assets/gameTitle.png";
+import "./App.css";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { playerTurn: 1, gameStage: "start" };
+  }
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+      <div className='App'>
+        <header className='App-header'>
+          <img src={gameTitle} />
+          <div className='ship-logo-container'>
+            <img src={shipLogo} className='ship-logo' alt='ship-logo' />
+          </div>
         </header>
       </div>
     );
