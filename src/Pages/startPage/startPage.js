@@ -14,7 +14,7 @@ class startPage extends Component {
     return (
       <div className='startPage'>
         <header className='startPage-header'>
-          <img src={gameTitle} />
+          <img src={gameTitle} alt='gameTitle' />
           <div className='ship-logo-container'>
             <img src={shipLogo} className='ship-logo' alt='ship-logo' />
           </div>
